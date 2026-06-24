@@ -34,6 +34,7 @@ garantizando balance contable perfecto y conformidad con el validador ARCA (RG 3
     'external_dependencies': {
         'python': ['pdfplumber'],
     },
+    'images': ['static/description/banner.png'],
     'installable': True,
     'application': False,
     'auto_install': False,
