@@ -23,8 +23,7 @@ garantizando balance contable perfecto y conformidad con el validador ARCA (RG 3
     'depends': [
         'base',
         'account',
-        'l10n_ar',
-        'l10n_ar_ux',
+        'l10n_ar',      
     ],
     'data': [
         'data/account_data.xml',
