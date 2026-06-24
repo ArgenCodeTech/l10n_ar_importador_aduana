@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="account_509_71_derecho_importacion" model="account.account">
+            <field name="code">509.71</field>
+            <field name="name">derecho de importacion</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+        <record id="account_509_55_estadistica_importacion" model="account.account">
+            <field name="code">509.55</field>
+            <field name="name">estadistica de importacion</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+    </data>
+</odoo>

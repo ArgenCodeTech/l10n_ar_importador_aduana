@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista del wizard (ventana flotante) -->
+    <record id="l10n_ar_importar_dua_wizard_form" model="ir.ui.view">
+        <field name="name">l10n.ar.importar.dua.wizard.form</field>
+        <field name="model">l10n_ar.importar.dua.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Importar Despacho de Aduana">
+                <group>
+                    <group>
+                        <field name="file_data" filename="file_name"
+                               widget="binary"
+                               placeholder="Arrastre o seleccione el PDF del DUA"/>
+                        <field name="file_name" invisible="1"/>
+                    </group>
+                    <group>
+                        <field name="partner_id"
+                               options="{'no_create': True}"
+                               placeholder="Seleccione el proveedor"/>
+                        <field name="journal_id"
+                               options="{'no_create': True}"
+                               placeholder="Diario de compras"/>
+                    </group>
+                </group>
+
+                <!-- Opciones de pago -->
+                <group string="Opciones de Pago">
+                    <field name="registrar_pago_auto" widget="boolean_toggle"/>
+                </group>
+
+                <!-- Datos extraídos (feedback visual) -->
+                <group string="Datos extraídos del PDF"
+                       attrs="{'invisible': [('extracted_ref', '=', False)]}">
+                    <field name="extracted_ref" string="Nº Despacho"/>
+                    <field name="extracted_date" string="Fecha"/>
+                </group>
+
+                <footer>
+                    <button name="action_import_pdf"
+                            string="Procesar y crear factura"
+                            type="object"
+                            class="btn-primary"
+                            confirm="¿Está seguro que desea procesar este PDF y crear la factura?"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción del wizard -->
+    <record id="l10n_ar_action_importar_dua_wizard" model="ir.actions.act_window">
+        <field name="name">Importar DUA desde PDF</field>
+        <field name="res_model">l10n_ar.importar.dua.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="binding_view_types">form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Importe un Despacho de Aduana argentino desde un archivo PDF.
+            </p>
+            <p>
+                Seleccione el archivo PDF del DUA (Despacho de Importación) y el sistema
+                extraerá automáticamente los montos de aranceles, tasas e impuestos
+                para crear la factura de su proveedor.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menú apuntando a menu_finance_payables de Odoo v15 -->
+    <menuitem id="l10n_ar_menu_importar_dua"
+              name="Importar DUA PDF"
+              parent="account.menu_finance_payables"
+              action="l10n_ar_action_importar_dua_wizard"
+              sequence="100"/>
+</odoo>

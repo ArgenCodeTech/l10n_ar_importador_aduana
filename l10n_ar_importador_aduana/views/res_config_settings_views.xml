@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_dua" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.dua</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block"
+                     data-string="Aduana DUA"
+                     string="Aduana DUA"
+                     data-key="l10n_ar_importador_aduana">
+                    <h2>Despachos de Aduana (DUA)</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="l10n_ar_dua_account_arancel_id"/>
+                                <div class="text-muted">
+                                    Cuenta de gastos para ARANCEL (código 010).
+                                    Si no se configura, se usa la cuenta 509.71.
+                                </div>
+                                <div class="content-group">
+                                    <div class="mt8">
+                                        <field name="l10n_ar_dua_account_arancel_id"
+                                               widget="many2one"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label for="l10n_ar_dua_account_estadistica_id"/>
+                                <div class="text-muted">
+                                    Cuenta para TASA ESTADÍSTICA (011/061) y SIM (500).
+                                    Si no se configura, se usa la cuenta 509.55.
+                                </div>
+                                <div class="content-group">
+                                    <div class="mt8">
+                                        <field name="l10n_ar_dua_account_estadistica_id"
+                                               widget="many2one"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
