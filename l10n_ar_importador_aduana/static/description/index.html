@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"/>
-    <style>
-        body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
-        .banner { width: 100%; max-width: 730px; display: block; margin-bottom: 24px; }
-        h2 { color: #1a3a5c; font-size: 20px; border-bottom: 2px solid #2a6db5; padding-bottom: 6px; margin-top: 28px; }
-        h3 { color: #1e4a7a; font-size: 15px; margin-top: 16px; }
-        ul { padding-left: 20px; line-height: 1.8; }
-        li { margin-bottom: 4px; }
-        .feature-box { background: #f0f6ff; border-left: 4px solid #2a6db5; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
-        .badge { display: inline-block; background: #2a6db5; color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 12px; margin: 2px; }
-        table { width: 100%; border-collapse: collapse; margin: 12px 0; }
-        th { background: #1a3a5c; color: #fff; padding: 8px 12px; text-align: left; }
-        td { padding: 8px 12px; border-bottom: 1px solid #dde; }
-        tr:nth-child(even) td { background: #f5f8ff; }
-        .warning { background: #fff8e1; border-left: 4px solid #f0a500; padding: 10px 14px; border-radius: 4px; margin: 12px 0; }
-    </style>
+<meta charset="UTF-8"/>
+<style>
+body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
+img.banner { width: 100%; display: block; margin-bottom: 32px; }
+h2 { color: #1a3a5c; font-size: 26px; border-bottom: 3px solid #2a6db5; padding-bottom: 8px; margin-top: 36px; }
+p { font-size: 17px; line-height: 1.8; }
+ul, ol { font-size: 17px; line-height: 2.0; padding-left: 24px; }
+.feature-box { background: #f0f6ff; border-left: 5px solid #2a6db5; padding: 16px 20px; margin: 16px 0; border-radius: 4px; font-size: 17px; }
+.feature-box strong { color: #1a3a5c; display: block; margin-bottom: 6px; font-size: 18px; }
+.badge { display: inline-block; background: #2a6db5; color: #fff; padding: 4px 14px; border-radius: 12px; font-size: 15px; margin: 2px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 16px; }
+th { background: #1a3a5c; color: #fff; padding: 12px 16px; text-align: left; font-size: 16px; }
+td { padding: 11px 16px; border-bottom: 1px solid #dde; }
+tr:nth-child(even) td { background: #f5f8ff; }
+.warning { background: #fff8e1; border-left: 5px solid #f0a500; padding: 14px 18px; border-radius: 4px; margin: 16px 0; font-size: 17px; }
+code { background: #eef2ff; padding: 2px 8px; border-radius: 3px; font-size: 15px; }
+</style>
 </head>
 <body>
 
-<img src="banner.png" class="banner" alt="Argentina Importación Aduana"/>
+<img src="banner.png" class="banner" alt="Argentina Importacion Aduana"/>
 
-<h2>¿Qué hace este módulo?</h2>
+<h2>Que hace este modulo?</h2>
 <p>
-Permite cargar automáticamente Despachos de Aduana (Formulario Oficial <strong>OM-1993</strong>) desde PDF 
-mediante un asistente (wizard), generando en forma automática la Factura de Proveedor en Odoo 
+Permite cargar automaticamente Despachos de Aduana (Formulario Oficial <strong>OM-1993</strong>) desde PDF
+mediante un asistente (wizard), generando en forma automatica la Factura de Proveedor en Odoo
 con <strong>balance contable perfecto</strong> y conformidad con el validador <strong>ARCA (RG 3685)</strong>.
 </p>
 
-<h2>Características principales</h2>
+<h2>Caracteristicas principales</h2>
 
 <div class="feature-box">
-    <strong>Carga automática desde PDF</strong><br/>
-    Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.
+<strong>Carga automatica desde PDF</strong>
+Subi el PDF del despacho y el wizard extrae todos los valores fiscales sin intervencion manual.
 </div>
 
 <div class="feature-box">
-    <strong>Desglose fiscal completo</strong><br/>
-    Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, 
-    Percepciones de Ganancias (RG 830), Percepciones de IIBB Provinciales y SIM IMPO (No Gravado).
+<strong>Desglose fiscal completo</strong>
+Clasifica automaticamente Aranceles, Tasas Estadisticas, IVA Credito Fiscal 21%,
+Percepciones de Ganancias (RG 830), Percepciones de IIBB Provinciales y SIM IMPO (No Gravado).
 </div>
 
 <div class="feature-box">
-    <strong>Ajuste atómico quirúrgico</strong><br/>
-    Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, 
-    sin diferencias de centavos ni errores de redondeo.
+<strong>Ajuste atomico quirurgico</strong>
+Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA,
+sin diferencias de centavos ni errores de redondeo.
 </div>
 
 <div class="feature-box">
-    <strong>Validador ARCA (RG 3685)</strong><br/>
-    Genera el TXT con formato exacto: 325 chars CBTE + 50 chars ALICUOTAS. 
-    SIM IMPO se registra como No Gravado (C10) con alícuota 0 (C12).
+<strong>Validador ARCA (RG 3685)</strong>
+Genera el TXT con formato exacto: 325 chars CBTE + 50 chars ALICUOTAS.
+SIM IMPO se registra como No Gravado (C10) con alicuota 0 (C12).
 </div>
 
 <h2>Impuestos y cuentas soportadas</h2>
-
 <table>
-    <tr><th>Concepto</th><th>Cuenta</th><th>Tratamiento fiscal</th></tr>
-    <tr><td>Arancel</td><td>509.71 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
-    <tr><td>Tasa Estadística</td><td>509.55 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
-    <tr><td>SIM IMPO</td><td>509.55 (configurable)</td><td>No Gravado</td></tr>
-    <tr><td>IVA Crédito Fiscal</td><td>1.1.4.04.xxx</td><td>Clasificación automática</td></tr>
-    <tr><td>Ganancias RG 830</td><td>1.1.4.05.xxx</td><td>Clasificación automática</td></tr>
-    <tr><td>IIBB Provincial</td><td>1.1.4.02.xxx</td><td>Convenio Multilateral</td></tr>
+<tr><th>Concepto</th><th>Cuenta</th><th>Tratamiento fiscal</th></tr>
+<tr><td>Arancel</td><td>509.71 (configurable)</td><td>IVA 21% Credito Fiscal</td></tr>
+<tr><td>Tasa Estadistica</td><td>509.55 (configurable)</td><td>IVA 21% Credito Fiscal</td></tr>
+<tr><td>SIM IMPO</td><td>509.55 (configurable)</td><td>No Gravado</td></tr>
+<tr><td>IVA Credito Fiscal</td><td>1.1.4.04.xxx</td><td>Clasificacion automatica</td></tr>
+<tr><td>Ganancias RG 830</td><td>1.1.4.05.xxx</td><td>Clasificacion automatica</td></tr>
+<tr><td>IIBB Provincial</td><td>1.1.4.02.xxx</td><td>Convenio Multilateral</td></tr>
 </table>
 
 <h2>Requisitos</h2>
 <ul>
-    <li>Odoo 15.0 Community o Enterprise</li>
-    <li>Módulos: <span class="badge">account</span> <span class="badge">l10n_ar</span></li>
-    <li>Python: <span class="badge">pdfplumber</span></li>
-    <li>Localización argentina configurada (plan de cuentas AR)</li>
+<li>Odoo 15.0 Community o Enterprise</li>
+<li>Modulos: <span class="badge">account</span> <span class="badge">l10n_ar</span></li>
+<li>Python: <span class="badge">pdfplumber</span></li>
+<li>Localizacion argentina configurada (plan de cuentas AR)</li>
 </ul>
 
-<h2>Instalación</h2>
+<h2>Instalacion</h2>
 <ol>
-    <li>Instalar dependencia Python: <code>pip install pdfplumber</code></li>
-    <li>Copiar el módulo en la carpeta <code>addons</code> de Odoo</li>
-    <li>Actualizar lista de módulos y instalar <strong>Argentina Importación Aduana</strong></li>
-    <li>Configurar las cuentas contables en <em>Contabilidad → Configuración → Ajustes</em></li>
+<li>Instalar dependencia Python: <code>pip install pdfplumber</code></li>
+<li>Copiar el modulo en la carpeta <code>addons</code> de Odoo</li>
+<li>Actualizar lista de modulos e instalar <strong>Argentina Importacion Aduana</strong></li>
+<li>Configurar las cuentas contables en <em>Contabilidad &rarr; Configuracion &rarr; Ajustes</em></li>
 </ol>
 
 <h2>Soporte</h2>
 <div class="warning">
-    Para soporte técnico, consultas y personalizaciones contactar a 
-    <strong>ArgenCode Tech</strong> a través del sitio web: 
-    <a href="https://argencodetech.com">argencodetech.com</a>
+Para soporte tecnico, consultas y personalizaciones contactar a
+<strong>ArgenCode Tech</strong>:
+<a href="https://argencodetech.com">argencodetech.com</a>
 </div>
 
 </body>
