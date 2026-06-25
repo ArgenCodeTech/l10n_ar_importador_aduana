@@ -6,7 +6,7 @@
 <section class="oe_container">
     <div class="oe_row oe_padded">
         <div class="oe_span12">
-            <img src="banner.png" class="img-responsive center-block" alt="Argentina Importacion Aduana Banner"/>
+            <img src="banner.png" class="img-responsive" alt="Argentina Importacion Aduana"/>
         </div>
     </div>
 </section>
@@ -15,8 +15,8 @@
     <div class="oe_row oe_padded">
         <div class="oe_span12">
             <h2 class="oe_slogan">¿Qué hace este módulo?</h2>
-            <p class="oe_mt32 text-justify" style="font-size:18px; line-height:28px;">
-                Permite cargar automáticamente Despachos de Aduana (Formulario Oficial OM-1993) desde PDF mediante un asistente (wizard), generando en forma automatizada la Factura de Proveedor en Odoo con balance contable perfecto y conformidad con el validador ARCA (RG 3685).
+            <p style="font-size:17px; line-height:1.8; text-align:justify; margin-top:20px;">
+                Permite cargar automáticamente Despachos de Aduana (Formulario Oficial OM-1993) desde PDF mediante un asistente (wizard), generando en forma automática la Factura de Proveedor en Odoo con balance contable perfecto y conformidad con el validador ARCA (RG 3685).
             </p>
         </div>
     </div>
@@ -24,31 +24,27 @@
 
 <section class="oe_container">
     <div class="oe_row oe_padded">
-        <h2 class="oe_slogan oe_mb32">Características principales</h2>
-        <div class="oe_span6 oe_mb32">
-            <div class="panel panel-primary">
-                <div class="panel-heading"><h3 class="panel-title">Carga Automática desde PDF</h3></div>
-                <div class="panel-body">Subí el PDF del despacho de ARCA y el wizard extraerá todos los valores fiscales sin intervención ni transcripción manual.</div>
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Características principales</h2>
+
+            <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
+                <strong style="font-size:17px; color:#1a3a5c;">Carga Automática desde PDF</strong>
+                <p style="font-size:15px; margin:6px 0 0 0;">Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.</p>
             </div>
-        </div>
-        <div class="oe_span6 oe_mb32">
-            <div class="panel panel-primary">
-                <div class="panel-heading"><h3 class="panel-title">Desglose Fiscal Completo</h3></div>
-                <div class="panel-body">Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal, Percepciones de Ganancias (RG 830), IIBB Provinciales y SIM IMPO.</div>
+
+            <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
+                <strong style="font-size:17px; color:#1a3a5c;">Desglose Fiscal Completo</strong>
+                <p style="font-size:15px; margin:6px 0 0 0;">Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, Percepciones de Ganancias (RG 830), IIBB Provinciales y SIM IMPO (No Gravado).</p>
             </div>
-        </div>
-    </div>
-    <div class="oe_row oe_padded">
-        <div class="oe_span6 oe_mb32">
-            <div class="panel panel-primary">
-                <div class="panel-heading"><h3 class="panel-title">Ajuste Atómico Quirúrgico</h3></div>
-                <div class="panel-body">Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, eliminando diferencias de centavos y errores de redondeo.</div>
+
+            <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
+                <strong style="font-size:17px; color:#1a3a5c;">Ajuste Atómico Quirúrgico</strong>
+                <p style="font-size:15px; margin:6px 0 0 0;">Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, sin diferencias de centavos ni errores de redondeo.</p>
             </div>
-        </div>
-        <div class="oe_span6 oe_mb32">
-            <div class="panel panel-primary">
-                <div class="panel-heading"><h3 class="panel-title">Validación Contable RG 3685</h3></div>
-                <div class="panel-body">Genera las líneas de impuestos respetando la estructura oficial requerida para el reporte de compras y el validador contable de ARCA.</div>
+
+            <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
+                <strong style="font-size:17px; color:#1a3a5c;">Validación Contable RG 3685</strong>
+                <p style="font-size:15px; margin:6px 0 0 0;">Genera las líneas de impuestos respetando la estructura oficial requerida para el reporte de compras y el validador contable de ARCA.</p>
             </div>
         </div>
     </div>
@@ -57,26 +53,20 @@
 <section class="oe_container oe_dark">
     <div class="oe_row oe_padded">
         <div class="oe_span12">
-            <h2 class="oe_slogan oe_mb32">Impuestos y cuentas soportadas</h2>
-            <div class="table-responsive oe_mt32">
-                <table class="table table-striped table-bordered">
-                    <thead>
-                        <tr class="active">
-                            <th><strong>Concepto</strong></th>
-                            <th><strong>Cuenta Sugerida</strong></th>
-                            <th><strong>Tratamiento Fiscal</strong></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><strong>Arancel</strong></td><td>509.71 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
-                        <tr><td><strong>Tasa Estadística</strong></td><td>509.55 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
-                        <tr><td><strong>SIM IMPO</strong></td><td>509.55 (configurable)</td><td>No Gravado</td></tr>
-                        <tr><td><strong>IVA Crédito Fiscal</strong></td><td>1.1.4.04.xxx</td><td>Clasificación automática</td></tr>
-                        <tr><td><strong>Ganancias RG 830</strong></td><td>1.1.4.05.xxx</td><td>Clasificación automática</td></tr>
-                        <tr><td><strong>IIBB Provincial</strong></td><td>1.1.4.02.xxx</td><td>Convenio Multilateral</td></tr>
-                    </tbody>
-                </table>
-            </div>
+            <h2 class="oe_slogan">Impuestos y cuentas soportadas</h2>
+            <table class="table table-striped table-bordered oe_mt32">
+                <thead>
+                    <tr><th>Concepto</th><th>Cuenta</th><th>Tratamiento Fiscal</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Arancel</strong></td><td>509.71 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
+                    <tr><td><strong>Tasa Estadística</strong></td><td>509.55 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
+                    <tr><td><strong>SIM IMPO</strong></td><td>509.55 (configurable)</td><td>No Gravado</td></tr>
+                    <tr><td><strong>IVA Crédito Fiscal</strong></td><td>1.1.4.04.xxx</td><td>Clasificación automática</td></tr>
+                    <tr><td><strong>Ganancias RG 830</strong></td><td>1.1.4.05.xxx</td><td>Clasificación automática</td></tr>
+                    <tr><td><strong>IIBB Provincial</strong></td><td>1.1.4.02.xxx</td><td>Convenio Multilateral</td></tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
@@ -85,11 +75,11 @@
     <div class="oe_row oe_padded">
         <div class="oe_span12">
             <h2 class="oe_slogan">Requisitos del Sistema</h2>
-            <ul class="list-group oe_mt32" style="font-size:16px;">
-                <li class="list-group-item">Odoo 15.0 Community o Enterprise.</li>
-                <li class="list-group-item">Módulos: <code>account</code> y <code>l10n_ar</code> instalados.</li>
-                <li class="list-group-item">Python: <code>pdfplumber</code> instalado en el servidor.</li>
-                <li class="list-group-item">Localización argentina configurada con plan de cuentas activo.</li>
+            <ul style="font-size:16px; line-height:2.0; margin-top:20px;">
+                <li>Odoo 15.0 Community o Enterprise.</li>
+                <li>Módulos: <code>account</code> y <code>l10n_ar</code> instalados.</li>
+                <li>Python: <code>pdfplumber</code> instalado en el servidor.</li>
+                <li>Localización argentina configurada con plan de cuentas activo.</li>
             </ul>
         </div>
     </div>
@@ -99,10 +89,10 @@
     <div class="oe_row oe_padded">
         <div class="oe_span12">
             <h2 class="oe_slogan">Instalación paso a paso</h2>
-            <ol class="oe_mt32" style="font-size:16px; line-height:28px;">
-                <li>Instalá la dependencia Python: <code>pip install pdfplumber</code></li>
-                <li>Copiá la carpeta del módulo dentro de tu ruta de <code>addons</code> de Odoo.</li>
-                <li>Activá el modo desarrollador en Configuración General.</li>
+            <ol style="font-size:16px; line-height:2.0; margin-top:20px;">
+                <li>Instalar dependencia Python: <code>pip install pdfplumber</code></li>
+                <li>Copiar la carpeta del módulo dentro de la ruta <code>addons</code> de Odoo.</li>
+                <li>Activar el modo desarrollador en Configuración General.</li>
                 <li>Ir a Aplicaciones y hacer clic en <strong>"Actualizar lista de módulos"</strong>.</li>
                 <li>Buscar <code>l10n_ar_importador_aduana</code> y presionar <strong>"Instalar"</strong>.</li>
             </ol>
@@ -113,13 +103,11 @@
 <section class="oe_container">
     <div class="oe_row oe_padded text-center">
         <div class="oe_span12">
-            <h2 class="oe_slogan">Soporte y Garantía Comercial</h2>
-            <p class="oe_mt32 oe_mb32" style="font-size:16px;">
-                Al adquirir la versión profesional con licencia <strong>OPL-1</strong>, contás con soporte directo del equipo técnico de ArgenCode Tech.
+            <h2 class="oe_slogan">Soporte</h2>
+            <p style="font-size:16px; margin-top:20px;">
+                Al adquirir la licencia <strong>OPL-1</strong>, contás con soporte directo del equipo técnico de <strong>ArgenCode Tech</strong>.
             </p>
-            <div class="oe_mt32">
-                <a href="https://argencodetech.com" class="btn btn-primary btn-lg" target="_blank">Contactar a ArgenCode Tech</a>
-            </div>
+            <a href="https://argencodetech.com" class="btn btn-primary btn-lg" style="margin-top:20px;" target="_blank">Contactar a ArgenCode Tech</a>
         </div>
     </div>
 </section>
