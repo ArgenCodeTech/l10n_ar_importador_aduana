@@ -15,7 +15,7 @@
     <div class="oe_row oe_padded">
         <div class="oe_span12">
             <h2 class="oe_slogan">¿Qué hace este módulo?</h2>
-            <p style="font-size:17px; line-height:1.8; text-align:justify; margin-top:20px;">
+            <p style="font-size:18px !important; line-height:1.9 !important; text-align:justify; margin-top:20px; color:#212529 !important; font-family:Arial,sans-serif !important;">
                 Permite cargar automáticamente Despachos de Aduana (Formulario Oficial OM-1993) desde PDF mediante un asistente (wizard), generando en forma automática la Factura de Proveedor en Odoo con balance contable perfecto y conformidad con el validador ARCA (RG 3685).
             </p>
         </div>
@@ -28,23 +28,23 @@
             <h2 class="oe_slogan">Características principales</h2>
 
             <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
-                <strong style="font-size:17px; color:#1a3a5c;">Carga Automática desde PDF</strong>
-                <p style="font-size:15px; margin:6px 0 0 0;">Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.</p>
+                <strong style="font-size:18px !important; color:#1a3a5c !important; font-family:Arial,sans-serif !important;">Carga Automática desde PDF</strong>
+                <p style="font-size:16px !important; color:#212529 !important; margin:8px 0 0 0 !important; font-family:Arial,sans-serif !important;">Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.</p>
             </div>
 
             <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
-                <strong style="font-size:17px; color:#1a3a5c;">Desglose Fiscal Completo</strong>
-                <p style="font-size:15px; margin:6px 0 0 0;">Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, Percepciones de Ganancias (RG 830), IIBB Provinciales y SIM IMPO (No Gravado).</p>
+                <strong style="font-size:18px !important; color:#1a3a5c !important; font-family:Arial,sans-serif !important;">Desglose Fiscal Completo</strong>
+                <p style="font-size:16px !important; color:#212529 !important; margin:8px 0 0 0 !important; font-family:Arial,sans-serif !important;">Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, Percepciones de Ganancias (RG 830), IIBB Provinciales y SIM IMPO (No Gravado).</p>
             </div>
 
             <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
-                <strong style="font-size:17px; color:#1a3a5c;">Ajuste Atómico Quirúrgico</strong>
-                <p style="font-size:15px; margin:6px 0 0 0;">Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, sin diferencias de centavos ni errores de redondeo.</p>
+                <strong style="font-size:18px !important; color:#1a3a5c !important; font-family:Arial,sans-serif !important;">Ajuste Atómico Quirúrgico</strong>
+                <p style="font-size:16px !important; color:#212529 !important; margin:8px 0 0 0 !important; font-family:Arial,sans-serif !important;">Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, sin diferencias de centavos ni errores de redondeo.</p>
             </div>
 
             <div style="background:#f0f6ff; border-left:5px solid #2a6db5; padding:16px 20px; margin:14px 0; border-radius:4px;">
-                <strong style="font-size:17px; color:#1a3a5c;">Validación Contable RG 3685</strong>
-                <p style="font-size:15px; margin:6px 0 0 0;">Genera las líneas de impuestos respetando la estructura oficial requerida para el reporte de compras y el validador contable de ARCA.</p>
+                <strong style="font-size:18px !important; color:#1a3a5c !important; font-family:Arial,sans-serif !important;">Validación Contable RG 3685</strong>
+                <p style="font-size:16px !important; color:#212529 !important; margin:8px 0 0 0 !important; font-family:Arial,sans-serif !important;">Genera las líneas de impuestos respetando la estructura oficial requerida para el reporte de compras y el validador contable de ARCA.</p>
             </div>
         </div>
     </div>
@@ -75,11 +75,11 @@
     <div class="oe_row oe_padded">
         <div class="oe_span12">
             <h2 class="oe_slogan">Requisitos del Sistema</h2>
-            <ul style="font-size:16px; line-height:2.0; margin-top:20px;">
-                <li>Odoo 15.0 Community o Enterprise.</li>
-                <li>Módulos: <code>account</code> y <code>l10n_ar</code> instalados.</li>
-                <li>Python: <code>pdfplumber</code> instalado en el servidor.</li>
-                <li>Localización argentina configurada con plan de cuentas activo.</li>
+            <ul style="font-size:16px !important; line-height:2.0; margin-top:20px; color:#212529 !important; font-family:Arial,sans-serif !important;">
+                <li style="color:#212529 !important;">Odoo 15.0 Community o Enterprise.</li>
+                <li style="color:#212529 !important;">Módulos: <code>account</code> y <code>l10n_ar</code> instalados.</li>
+                <li style="color:#212529 !important;">Python: <code>pdfplumber</code> instalado en el servidor.</li>
+                <li style="color:#212529 !important;">Localización argentina configurada con plan de cuentas activo.</li>
             </ul>
         </div>
     </div>
@@ -89,12 +89,12 @@
     <div class="oe_row oe_padded">
         <div class="oe_span12">
             <h2 class="oe_slogan">Instalación paso a paso</h2>
-            <ol style="font-size:16px; line-height:2.0; margin-top:20px;">
-                <li>Instalar dependencia Python: <code>pip install pdfplumber</code></li>
-                <li>Copiar la carpeta del módulo dentro de la ruta <code>addons</code> de Odoo.</li>
-                <li>Activar el modo desarrollador en Configuración General.</li>
-                <li>Ir a Aplicaciones y hacer clic en <strong>"Actualizar lista de módulos"</strong>.</li>
-                <li>Buscar <code>l10n_ar_importador_aduana</code> y presionar <strong>"Instalar"</strong>.</li>
+            <ol style="font-size:16px !important; line-height:2.0; margin-top:20px; color:#212529 !important; font-family:Arial,sans-serif !important;">
+                <li style="color:#212529 !important;">Instalar dependencia Python: <code>pip install pdfplumber</code></li>
+                <li style="color:#212529 !important;">Copiar la carpeta del módulo dentro de la ruta <code>addons</code> de Odoo.</li>
+                <li style="color:#212529 !important;">Activar el modo desarrollador en Configuración General.</li>
+                <li style="color:#212529 !important;">Ir a Aplicaciones y hacer clic en <strong>"Actualizar lista de módulos"</strong>.</li>
+                <li style="color:#212529 !important;">Buscar <code>l10n_ar_importador_aduana</code> y presionar <strong>"Instalar"</strong>.</li>
             </ol>
         </div>
     </div>
@@ -104,7 +104,7 @@
     <div class="oe_row oe_padded text-center">
         <div class="oe_span12">
             <h2 class="oe_slogan">Soporte</h2>
-            <p style="font-size:16px; margin-top:20px;">
+            <p style="font-size:16px !important; margin-top:20px; color:#212529 !important; font-family:Arial,sans-serif !important;">
                 Al adquirir la licencia <strong>OPL-1</strong>, contás con soporte directo del equipo técnico de <strong>ArgenCode Tech</strong>.
             </p>
             <a href="https://argencodetech.com" class="btn btn-primary btn-lg" style="margin-top:20px;" target="_blank">Contactar a ArgenCode Tech</a>
