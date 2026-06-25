@@ -3,24 +3,26 @@
 <head>
 <meta charset="UTF-8"/>
 <style>
-    body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #212529 !important; font-size: 16px; line-height: 1.7; margin: 0; padding: 0; }
-    .oe_container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-    .banner-wrap { text-align: center; margin-bottom: 40px; }
-    .banner-wrap img { max-width: 800px; width: 100%; height: auto; display: inline-block; border-radius: 6px; }
-    h2 { font-size: 30px !important; font-weight: 700 !important; color: #1a3a5c !important; border-bottom: 3px solid #2a6db5; padding-bottom: 10px; margin-top: 40px; margin-bottom: 16px; }
-    h3 { font-size: 20px !important; font-weight: 700 !important; color: #1e4a7a !important; margin-top: 0; margin-bottom: 6px; }
-    p, li, td { font-size: 16px !important; color: #212529 !important; }
-    a { color: #2a6db5 !important; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif !important; margin: 0; padding: 0; background: #fff; }
+    .oe_container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+    .banner-wrap { text-align: center; margin-bottom: 44px; }
+    .banner-wrap img { width: 100%; height: auto; display: inline-block; border-radius: 6px; }
+    h2.section-title { font-size: 28px !important; font-weight: 800 !important; color: #1a3a5c !important; border-bottom: 3px solid #2a6db5; padding-bottom: 10px; margin-top: 44px !important; margin-bottom: 20px !important; font-family: 'Helvetica Neue', Arial, sans-serif !important; }
+    h3.feat-title { font-size: 19px !important; font-weight: 700 !important; color: #1e4a7a !important; margin: 0 0 6px 0 !important; font-family: 'Helvetica Neue', Arial, sans-serif !important; }
+    .body-text { font-size: 17px !important; color: #2c2c2c !important; line-height: 1.75 !important; text-align: justify !important; font-family: 'Helvetica Neue', Arial, sans-serif !important; margin-bottom: 16px !important; }
+    .feat-text { font-size: 16px !important; color: #2c2c2c !important; line-height: 1.7 !important; margin: 0 !important; font-family: 'Helvetica Neue', Arial, sans-serif !important; }
     .feature-box { background: #f0f6ff; border-left: 5px solid #2a6db5; padding: 16px 20px; margin: 14px 0; border-radius: 4px; }
-    .feature-box p { margin: 0 !important; }
-    .table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 16px; }
-    .table th { background: #1a3a5c !important; color: #fff !important; padding: 12px 16px; text-align: left; font-size: 16px !important; }
-    .table td { padding: 11px 16px; border-bottom: 1px solid #dee2e6; color: #212529 !important; }
-    .table-striped tr:nth-child(even) td { background: #f5f8ff; }
-    ul, ol { font-size: 16px; padding-left: 24px; line-height: 2.0; color: #212529 !important; }
-    .badge { display: inline-block; background: #2a6db5; color: #fff !important; padding: 3px 12px; border-radius: 12px; font-size: 14px; margin: 2px; }
-    code { background: #eef2ff; padding: 2px 8px; border-radius: 3px; font-size: 14px; color: #1a3a5c !important; }
-    .alert-warning { background: #fff8e1; border-left: 5px solid #f0a500; padding: 14px 18px; border-radius: 4px; margin: 20px 0; font-size: 16px; color: #333 !important; }
+    .oe-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .oe-table th { background: #1a3a5c !important; color: #fff !important; padding: 12px 16px !important; text-align: left !important; font-size: 15px !important; font-family: 'Helvetica Neue', Arial, sans-serif !important; }
+    .oe-table td { padding: 11px 16px !important; border-bottom: 1px solid #dee2e6 !important; font-size: 15px !important; color: #2c2c2c !important; font-family: 'Helvetica Neue', Arial, sans-serif !important; }
+    .oe-table tr:nth-child(even) td { background: #f5f8ff !important; }
+    .list-items { font-size: 16px !important; color: #2c2c2c !important; padding-left: 24px; line-height: 2.1; font-family: 'Helvetica Neue', Arial, sans-serif !important; }
+    .list-items li { color: #2c2c2c !important; font-size: 16px !important; }
+    .badge { display: inline-block; background: #2a6db5; color: #fff !important; padding: 3px 12px; border-radius: 12px; font-size: 13px; margin: 2px; }
+    .inline-code { background: #eef2ff; padding: 2px 8px; border-radius: 3px; font-size: 14px; color: #1a3a5c !important; font-family: monospace; }
+    .alert-warn { background: #fff8e1; border-left: 5px solid #f0a500; padding: 14px 18px; border-radius: 4px; margin: 20px 0; font-size: 16px !important; color: #2c2c2c !important; }
+    .alert-warn a { color: #2a6db5 !important; }
     .section { margin-bottom: 36px; }
 </style>
 </head>
@@ -32,33 +34,33 @@
     </div>
 
     <div class="section">
-        <h2>¿Qué hace este módulo?</h2>
-        <p>Permite cargar automáticamente Despachos de Aduana (Formulario Oficial <strong>OM-1993</strong>) desde PDF mediante un asistente (wizard), generando en forma automática la Factura de Proveedor en Odoo con <strong>balance contable perfecto</strong> y conformidad con el validador <strong>ARCA (RG 3685)</strong>.</p>
+        <h2 class="section-title">¿Qué hace este módulo?</h2>
+        <p class="body-text">Permite cargar automáticamente Despachos de Aduana (Formulario Oficial <strong>OM-1993</strong>) desde PDF mediante un asistente (wizard), generando en forma automática la Factura de Proveedor en Odoo con <strong>balance contable perfecto</strong> y conformidad con el validador <strong>ARCA (RG 3685)</strong>.</p>
     </div>
 
     <div class="section">
-        <h2>Características principales</h2>
+        <h2 class="section-title">Características principales</h2>
         <div class="feature-box">
-            <h3>Carga automática desde PDF</h3>
-            <p>Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.</p>
+            <h3 class="feat-title">Carga automática desde PDF</h3>
+            <p class="feat-text">Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.</p>
         </div>
         <div class="feature-box">
-            <h3>Desglose fiscal completo</h3>
-            <p>Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, Percepciones de Ganancias (RG 830), Percepciones de IIBB Provinciales y SIM IMPO (No Gravado).</p>
+            <h3 class="feat-title">Desglose fiscal completo</h3>
+            <p class="feat-text">Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, Percepciones de Ganancias (RG 830), Percepciones de IIBB Provinciales y SIM IMPO (No Gravado).</p>
         </div>
         <div class="feature-box">
-            <h3>Ajuste atómico quirúrgico</h3>
-            <p>Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, sin diferencias de centavos ni errores de redondeo.</p>
+            <h3 class="feat-title">Ajuste atómico quirúrgico</h3>
+            <p class="feat-text">Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, sin diferencias de centavos ni errores de redondeo.</p>
         </div>
         <div class="feature-box">
-            <h3>Validador ARCA (RG 3685)</h3>
-            <p>Genera el TXT con formato exacto: 325 chars CBTE + 50 chars ALICUOTAS. SIM IMPO se registra como No Gravado (C10) con alícuota 0 (C12).</p>
+            <h3 class="feat-title">Validador ARCA (RG 3685)</h3>
+            <p class="feat-text">Genera el TXT con formato exacto: 325 chars CBTE + 50 chars ALICUOTAS. SIM IMPO se registra como No Gravado (C10) con alícuota 0 (C12).</p>
         </div>
     </div>
 
     <div class="section">
-        <h2>Impuestos y cuentas soportadas</h2>
-        <table class="table table-striped">
+        <h2 class="section-title">Impuestos y cuentas soportadas</h2>
+        <table class="oe-table">
             <thead>
                 <tr><th>Concepto</th><th>Cuenta</th><th>Tratamiento fiscal</th></tr>
             </thead>
@@ -74,8 +76,8 @@
     </div>
 
     <div class="section">
-        <h2>Requisitos</h2>
-        <ul>
+        <h2 class="section-title">Requisitos</h2>
+        <ul class="list-items">
             <li>Odoo 15.0 Community o Enterprise</li>
             <li>Módulos: <span class="badge">account</span> <span class="badge">l10n_ar</span></li>
             <li>Python: <span class="badge">pdfplumber</span></li>
@@ -84,18 +86,18 @@
     </div>
 
     <div class="section">
-        <h2>Instalación</h2>
-        <ol>
-            <li>Instalar dependencia Python: <code>pip install pdfplumber</code></li>
-            <li>Copiar el módulo en la carpeta <code>addons</code> de Odoo</li>
+        <h2 class="section-title">Instalación</h2>
+        <ol class="list-items">
+            <li>Instalar dependencia Python: <code class="inline-code">pip install pdfplumber</code></li>
+            <li>Copiar el módulo en la carpeta <code class="inline-code">addons</code> de Odoo</li>
             <li>Actualizar lista de módulos e instalar <strong>Argentina Importación Aduana</strong></li>
             <li>Configurar las cuentas contables en <em>Contabilidad → Configuración → Ajustes</em></li>
         </ol>
     </div>
 
     <div class="section">
-        <h2>Soporte</h2>
-        <div class="alert-warning">
+        <h2 class="section-title">Soporte</h2>
+        <div class="alert-warn">
             Para soporte técnico, consultas y personalizaciones contactar a <strong>ArgenCode Tech</strong>: <a href="https://argencodetech.com">argencodetech.com</a>
         </div>
     </div>
