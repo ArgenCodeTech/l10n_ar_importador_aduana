@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8"/>
 <style>
-    body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #212529; font-size: 16px; line-height: 1.7; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #212529 !important; font-size: 16px; line-height: 1.7; margin: 0; padding: 0; }
     .oe_container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
     .banner-wrap { text-align: center; margin-bottom: 40px; }
     .banner-wrap img { max-width: 800px; width: 100%; height: auto; display: inline-block; border-radius: 6px; }
-    h2 { font-size: 30px; font-weight: 700; color: #1a3a5c; border-bottom: 3px solid #2a6db5; padding-bottom: 10px; margin-top: 40px; margin-bottom: 16px; }
-    h3 { font-size: 20px; font-weight: 700; color: #1e4a7a; margin-top: 0; margin-bottom: 6px; }
-    p { font-size: 16px; color: #212529; margin-bottom: 16px; }
+    h2 { font-size: 30px !important; font-weight: 700 !important; color: #1a3a5c !important; border-bottom: 3px solid #2a6db5; padding-bottom: 10px; margin-top: 40px; margin-bottom: 16px; }
+    h3 { font-size: 20px !important; font-weight: 700 !important; color: #1e4a7a !important; margin-top: 0; margin-bottom: 6px; }
+    p, li, td { font-size: 16px !important; color: #212529 !important; }
+    a { color: #2a6db5 !important; }
     .feature-box { background: #f0f6ff; border-left: 5px solid #2a6db5; padding: 16px 20px; margin: 14px 0; border-radius: 4px; }
-    .feature-box p { margin: 0; font-size: 16px; color: #333; }
+    .feature-box p { margin: 0 !important; }
     .table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 16px; }
-    .table th { background: #1a3a5c; color: #fff; padding: 12px 16px; text-align: left; font-size: 16px; }
-    .table td { padding: 11px 16px; border-bottom: 1px solid #dee2e6; color: #212529; }
+    .table th { background: #1a3a5c !important; color: #fff !important; padding: 12px 16px; text-align: left; font-size: 16px !important; }
+    .table td { padding: 11px 16px; border-bottom: 1px solid #dee2e6; color: #212529 !important; }
     .table-striped tr:nth-child(even) td { background: #f5f8ff; }
-    ul { font-size: 16px; padding-left: 24px; line-height: 2.0; color: #212529; }
-    ol { font-size: 16px; padding-left: 24px; line-height: 2.2; color: #212529; }
-    .badge { display: inline-block; background: #2a6db5; color: #fff; padding: 3px 12px; border-radius: 12px; font-size: 14px; margin: 2px; }
-    code { background: #eef2ff; padding: 2px 8px; border-radius: 3px; font-size: 14px; color: #1a3a5c; }
-    .alert-warning { background: #fff8e1; border-left: 5px solid #f0a500; padding: 14px 18px; border-radius: 4px; margin: 20px 0; font-size: 16px; color: #333; }
+    ul, ol { font-size: 16px; padding-left: 24px; line-height: 2.0; color: #212529 !important; }
+    .badge { display: inline-block; background: #2a6db5; color: #fff !important; padding: 3px 12px; border-radius: 12px; font-size: 14px; margin: 2px; }
+    code { background: #eef2ff; padding: 2px 8px; border-radius: 3px; font-size: 14px; color: #1a3a5c !important; }
+    .alert-warning { background: #fff8e1; border-left: 5px solid #f0a500; padding: 14px 18px; border-radius: 4px; margin: 20px 0; font-size: 16px; color: #333 !important; }
     .section { margin-bottom: 36px; }
 </style>
 </head>
@@ -33,38 +33,26 @@
 
     <div class="section">
         <h2>¿Qué hace este módulo?</h2>
-        <p>
-            Permite cargar automáticamente Despachos de Aduana (Formulario Oficial <strong>OM-1993</strong>) 
-            desde PDF mediante un asistente (wizard), generando en forma automática la Factura de Proveedor 
-            en Odoo con <strong>balance contable perfecto</strong> y conformidad con el validador 
-            <strong>ARCA (RG 3685)</strong>.
-        </p>
+        <p>Permite cargar automáticamente Despachos de Aduana (Formulario Oficial <strong>OM-1993</strong>) desde PDF mediante un asistente (wizard), generando en forma automática la Factura de Proveedor en Odoo con <strong>balance contable perfecto</strong> y conformidad con el validador <strong>ARCA (RG 3685)</strong>.</p>
     </div>
 
     <div class="section">
         <h2>Características principales</h2>
-
         <div class="feature-box">
             <h3>Carga automática desde PDF</h3>
             <p>Subí el PDF del despacho y el wizard extrae todos los valores fiscales sin intervención manual.</p>
         </div>
-
         <div class="feature-box">
             <h3>Desglose fiscal completo</h3>
-            <p>Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, 
-            Percepciones de Ganancias (RG 830), Percepciones de IIBB Provinciales y SIM IMPO (No Gravado).</p>
+            <p>Clasifica automáticamente Aranceles, Tasas Estadísticas, IVA Crédito Fiscal 21%, Percepciones de Ganancias (RG 830), Percepciones de IIBB Provinciales y SIM IMPO (No Gravado).</p>
         </div>
-
         <div class="feature-box">
             <h3>Ajuste atómico quirúrgico</h3>
-            <p>Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, 
-            sin diferencias de centavos ni errores de redondeo.</p>
+            <p>Garantiza que el asiento contable cierre perfectamente usando base inversa de IVA, sin diferencias de centavos ni errores de redondeo.</p>
         </div>
-
         <div class="feature-box">
             <h3>Validador ARCA (RG 3685)</h3>
-            <p>Genera el TXT con formato exacto: 325 chars CBTE + 50 chars ALICUOTAS. 
-            SIM IMPO se registra como No Gravado (C10) con alícuota 0 (C12).</p>
+            <p>Genera el TXT con formato exacto: 325 chars CBTE + 50 chars ALICUOTAS. SIM IMPO se registra como No Gravado (C10) con alícuota 0 (C12).</p>
         </div>
     </div>
 
@@ -72,11 +60,7 @@
         <h2>Impuestos y cuentas soportadas</h2>
         <table class="table table-striped">
             <thead>
-                <tr>
-                    <th>Concepto</th>
-                    <th>Cuenta</th>
-                    <th>Tratamiento fiscal</th>
-                </tr>
+                <tr><th>Concepto</th><th>Cuenta</th><th>Tratamiento fiscal</th></tr>
             </thead>
             <tbody>
                 <tr><td>Arancel</td><td>509.71 (configurable)</td><td>IVA 21% Crédito Fiscal</td></tr>
@@ -112,9 +96,7 @@
     <div class="section">
         <h2>Soporte</h2>
         <div class="alert-warning">
-            Para soporte técnico, consultas y personalizaciones contactar a 
-            <strong>ArgenCode Tech</strong>: 
-            <a href="https://argencodetech.com">argencodetech.com</a>
+            Para soporte técnico, consultas y personalizaciones contactar a <strong>ArgenCode Tech</strong>: <a href="https://argencodetech.com">argencodetech.com</a>
         </div>
     </div>
 
