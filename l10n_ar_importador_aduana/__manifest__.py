@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Argentina Importación Aduana',
-    'version': '15.0.3.0.0',
+    'version': '15.0.3.0.1',
     'category': 'Accounting/Localizations',
     'summary': 'Carga automática de Despachos de Aduana (OM-1993) desde PDF con liquidación fiscal RG 3685',
     'description': """
